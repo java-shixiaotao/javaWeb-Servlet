@@ -25,6 +25,7 @@ public class JdbcDemo {
             System.out.println("email = " + resultSet.getString("email"));
             System.out.println("birthday = " + resultSet.getString("birthday"));
             System.out.println("--------------------------------------");
+            System.out.println("测试放入了geithub上了吗?");
         }
         statement.close();
         connection.close();
