@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0" metadata-complete="true">
+
+  <servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>com.mould.ServletDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>conttextReq</servlet-name>
+    <servlet-class>com.mould.ContextReq</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>conttextReq</servlet-name>
+    <url-pattern>/contextReq</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>ContextResp</servlet-name>
+    <servlet-class>com.mould.ContextResp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextResp</servlet-name>
+    <url-pattern>/ContextResp</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>DispatcherDemo</servlet-name>
+    <servlet-class>com.mould.DispatcherDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DispatcherDemo</servlet-name>
+    <url-pattern>/DispatcherDemo</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>CookieDemo</servlet-name>
+    <servlet-class>com.mould.CookieDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CookieDemo</servlet-name>
+    <url-pattern>/CookieDemo</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>HelloDemo</servlet-name>
+    <servlet-class>com.mould.HelloDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloDemo</servlet-name>
+    <url-pattern>/HelloDemo</url-pattern>
+    <url-pattern>/filter/HelloDemo</url-pattern>
+  </servlet-mapping>
+
+
+  <filter>
+    <filter-name>FileterDemo</filter-name>
+    <filter-class>com.filter.FileterDemo</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FileterDemo</filter-name>
+    <url-pattern>/filter/*</url-pattern>
+  </filter-mapping>
+
+  <listener>
+    <listener-class>com.filter.LinstenerDemo</listener-class>
+  </listener>
+</web-app>
